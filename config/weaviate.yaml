@@ -1,0 +1,16 @@
+
+metadata_path: "data/final/final_metadata.csv"
+
+embedding_model_args:
+  model_name: "sentence-transformers/all-MiniLM-L6-v2"
+  model_kwargs:
+    device: "cuda"
+
+weaviate_args:
+  ak_name: "weaviate2"
+  url: "https://vz10aml8qwbzfzxohgk7a.c0.asia-southeast1.gcp.weaviate.cloud"
+  attributes: ['movie', 'tmdb_id', 'imdb_id', 'genres', 'release_date', 'cast', 'crew', 'collection', 'budget', 'revenue', 'runtime', 'language', 'popularity', 'synopsis', 'poster_path', 'homepage']
+  index_name: "Mrsprj"
+  text_key: "movies"
+  by_text: False
+

@@ -315,8 +315,4 @@ class TMDBMovieDownloader:
 #         logging.info("Download started.")
 #         ids = self.download_ids().tolist()
 #         self.download_entries(ids)
-#
-# # Example usage:
-# # downloader = TMDBMovieDownloader(api_key='your_api_key', filepath='movies.csv', filepath_creds='credits.csv')
-# # downloader.download_data()
 
